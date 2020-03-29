@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CharactersViewControlerViewController.swift
 //  Rickipedia
 //
 //  Created by Pavel Vashkel on 3/29/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CharatersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

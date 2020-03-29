@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		806253A12430B3AC000FD943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253A02430B3AC000FD943 /* AppDelegate.swift */; };
 		806253A32430B3AC000FD943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253A22430B3AC000FD943 /* SceneDelegate.swift */; };
-		806253A52430B3AC000FD943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253A42430B3AC000FD943 /* ViewController.swift */; };
+		806253A52430B3AC000FD943 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253A42430B3AC000FD943 /* EpisodesViewController.swift */; };
 		806253A82430B3AC000FD943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806253A62430B3AC000FD943 /* Main.storyboard */; };
 		806253AA2430B3AD000FD943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806253A92430B3AD000FD943 /* Assets.xcassets */; };
 		806253AD2430B3AD000FD943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806253AB2430B3AD000FD943 /* LaunchScreen.storyboard */; };
@@ -24,13 +24,15 @@
 		806253CF2430FC79000FD943 /* LocationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253CE2430FC79000FD943 /* LocationsResponse.swift */; };
 		806253DB24311434000FD943 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253DA24311434000FD943 /* EpisodeView.swift */; };
 		806253DD2431143E000FD943 /* EpisodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 806253DC2431143E000FD943 /* EpisodeView.xib */; };
+		806253E024311AED000FD943 /* CharatersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253DF24311AED000FD943 /* CharatersViewController.swift */; };
+		806253E224311B00000FD943 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253E124311B00000FD943 /* LocationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8062539D2430B3AC000FD943 /* Rickipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rickipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806253A02430B3AC000FD943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806253A22430B3AC000FD943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		806253A42430B3AC000FD943 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		806253A42430B3AC000FD943 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 		806253A72430B3AC000FD943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		806253A92430B3AD000FD943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		806253AC2430B3AD000FD943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		806253CE2430FC79000FD943 /* LocationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsResponse.swift; sourceTree = "<group>"; };
 		806253DA24311434000FD943 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
 		806253DC2431143E000FD943 /* EpisodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeView.xib; sourceTree = "<group>"; };
+		806253DF24311AED000FD943 /* CharatersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharatersViewController.swift; sourceTree = "<group>"; };
+		806253E124311B00000FD943 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,15 +82,13 @@
 		8062539F2430B3AC000FD943 /* Rickipedia */ = {
 			isa = PBXGroup;
 			children = (
+				806253DE24311A6B000FD943 /* Views */,
 				806253D824311416000FD943 /* Custom Views */,
 				806253BF2430D9EF000FD943 /* Models */,
 				806253B72430C92D000FD943 /* Services */,
 				806253A02430B3AC000FD943 /* AppDelegate.swift */,
 				806253A22430B3AC000FD943 /* SceneDelegate.swift */,
-				806253A42430B3AC000FD943 /* ViewController.swift */,
-				806253A62430B3AC000FD943 /* Main.storyboard */,
 				806253A92430B3AD000FD943 /* Assets.xcassets */,
-				806253AB2430B3AD000FD943 /* LaunchScreen.storyboard */,
 				806253AE2430B3AD000FD943 /* Info.plist */,
 			);
 			path = Rickipedia;
@@ -129,6 +131,18 @@
 				806253DC2431143E000FD943 /* EpisodeView.xib */,
 			);
 			path = EpisodeView;
+			sourceTree = "<group>";
+		};
+		806253DE24311A6B000FD943 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				806253A42430B3AC000FD943 /* EpisodesViewController.swift */,
+				806253DF24311AED000FD943 /* CharatersViewController.swift */,
+				806253E124311B00000FD943 /* LocationsViewController.swift */,
+				806253A62430B3AC000FD943 /* Main.storyboard */,
+				806253AB2430B3AD000FD943 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,10 +225,12 @@
 			files = (
 				806253CD2430FC0B000FD943 /* Location.swift in Sources */,
 				806253C72430F71D000FD943 /* Info.swift in Sources */,
-				806253A52430B3AC000FD943 /* ViewController.swift in Sources */,
+				806253E024311AED000FD943 /* CharatersViewController.swift in Sources */,
+				806253A52430B3AC000FD943 /* EpisodesViewController.swift in Sources */,
 				806253C32430DB07000FD943 /* Character.swift in Sources */,
 				806253DB24311434000FD943 /* EpisodeView.swift in Sources */,
 				806253CF2430FC79000FD943 /* LocationsResponse.swift in Sources */,
+				806253E224311B00000FD943 /* LocationsViewController.swift in Sources */,
 				806253C52430F48F000FD943 /* CharactersResponse.swift in Sources */,
 				806253A12430B3AC000FD943 /* AppDelegate.swift in Sources */,
 				806253BB2430CA45000FD943 /* APIService.swift in Sources */,
