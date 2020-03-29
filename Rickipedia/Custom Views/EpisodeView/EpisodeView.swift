@@ -8,10 +8,20 @@
 
 import UIKit
 
-@IBDesignable
 class EpisodeView: UIView {
     
-    @IBOutlet var contentView: UIView!
+    var episode: Episode! {
+        didSet {
+            title.text = episode.name
+            slug.text = episode.episode
+            airDate.text = episode.airDate
+        }
+    }
+    
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var slug: UILabel!
+    @IBOutlet weak var airDate: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
