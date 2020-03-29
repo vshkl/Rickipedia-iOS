@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		806253A82430B3AC000FD943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806253A62430B3AC000FD943 /* Main.storyboard */; };
 		806253AA2430B3AD000FD943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806253A92430B3AD000FD943 /* Assets.xcassets */; };
 		806253AD2430B3AD000FD943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806253AB2430B3AD000FD943 /* LaunchScreen.storyboard */; };
+		806253B62430B4B9000FD943 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 806253B52430B4B9000FD943 /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806253B62430B4B9000FD943 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Rickipedia;
+			packageProductDependencies = (
+				806253B52430B4B9000FD943 /* Moya */,
+			);
 			productName = Rickipedia;
 			productReference = 8062539D2430B3AC000FD943 /* Rickipedia.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 806253942430B3AC000FD943;
+			packageReferences = (
+				806253B42430B4B9000FD943 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 8062539E2430B3AC000FD943 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,6 +298,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vshkl.Rickipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -307,6 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vshkl.Rickipedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -336,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		806253B42430B4B9000FD943 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		806253B52430B4B9000FD943 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 806253B42430B4B9000FD943 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 806253952430B3AC000FD943 /* Project object */;
 }
