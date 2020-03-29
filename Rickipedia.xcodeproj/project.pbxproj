@@ -22,6 +22,8 @@
 		806253CB2430FBBC000FD943 /* EpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253CA2430FBBC000FD943 /* EpisodesResponse.swift */; };
 		806253CD2430FC0B000FD943 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253CC2430FC0B000FD943 /* Location.swift */; };
 		806253CF2430FC79000FD943 /* LocationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253CE2430FC79000FD943 /* LocationsResponse.swift */; };
+		806253DB24311434000FD943 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253DA24311434000FD943 /* EpisodeView.swift */; };
+		806253DD2431143E000FD943 /* EpisodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 806253DC2431143E000FD943 /* EpisodeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		806253CA2430FBBC000FD943 /* EpisodesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesResponse.swift; sourceTree = "<group>"; };
 		806253CC2430FC0B000FD943 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		806253CE2430FC79000FD943 /* LocationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsResponse.swift; sourceTree = "<group>"; };
+		806253DA24311434000FD943 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
+		806253DC2431143E000FD943 /* EpisodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		8062539F2430B3AC000FD943 /* Rickipedia */ = {
 			isa = PBXGroup;
 			children = (
+				806253D824311416000FD943 /* Custom Views */,
 				806253BF2430D9EF000FD943 /* Models */,
 				806253B72430C92D000FD943 /* Services */,
 				806253A02430B3AC000FD943 /* AppDelegate.swift */,
@@ -107,6 +112,23 @@
 				806253CE2430FC79000FD943 /* LocationsResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		806253D824311416000FD943 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				806253D924311421000FD943 /* EpisodeView */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		806253D924311421000FD943 /* EpisodeView */ = {
+			isa = PBXGroup;
+			children = (
+				806253DA24311434000FD943 /* EpisodeView.swift */,
+				806253DC2431143E000FD943 /* EpisodeView.xib */,
+			);
+			path = EpisodeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806253DD2431143E000FD943 /* EpisodeView.xib in Resources */,
 				806253AD2430B3AD000FD943 /* LaunchScreen.storyboard in Resources */,
 				806253AA2430B3AD000FD943 /* Assets.xcassets in Resources */,
 				806253A82430B3AC000FD943 /* Main.storyboard in Resources */,
@@ -190,6 +213,7 @@
 				806253C72430F71D000FD943 /* Info.swift in Sources */,
 				806253A52430B3AC000FD943 /* ViewController.swift in Sources */,
 				806253C32430DB07000FD943 /* Character.swift in Sources */,
+				806253DB24311434000FD943 /* EpisodeView.swift in Sources */,
 				806253CF2430FC79000FD943 /* LocationsResponse.swift in Sources */,
 				806253C52430F48F000FD943 /* CharactersResponse.swift in Sources */,
 				806253A12430B3AC000FD943 /* AppDelegate.swift in Sources */,
