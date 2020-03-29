@@ -14,6 +14,8 @@ class EpisodesViewController: UIViewController {
     @IBOutlet weak var episodesTableView: UITableView!
     
     var episodes: [Episode] = []
+    var page: Int = 1
+    var pages: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,15 +28,17 @@ class EpisodesViewController: UIViewController {
         fetchEpisodes()
     }
     
-    private func fetchEpisodes() {
+    private func fetchEpisodes(forPage page: Int = 1) {
         let moyaProvider = MoyaProvider<APIService>()
         
-        moyaProvider.request(.episodes(page: 1)) { result in
+        moyaProvider.request(.episodes(page: page)) { result in
             switch result {
             case let .success(response):
                 do {
                     let episodesResponse = try response.map(EpisodesResponse.self)
-                    self.episodes = episodesResponse.results
+                    self.episodes.append(contentsOf: episodesResponse.results)
+                    self.page = page
+                    self.pages = episodesResponse.info.pages
                     self.episodesTableView.reloadData()
                 } catch let error {
                     print(error)
@@ -61,6 +65,12 @@ extension EpisodesViewController: UITableViewDataSource {
         cell.episodeView.episode = episodes[indexPath.row]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if (pages >= page && indexPath.row == episodes.count - 1) {
+            fetchEpisodes(forPage: page + 1)
+        }
     }
     
 }
