@@ -12,4 +12,4 @@ iOS Playground using [Rick and Morty API
 ## Libraries
 
 - [Moya](https://github.com/Moya/Moya)
-- [AlamofireImages](https://github.com/Alamofire/AlamofireImage)
+- [AlamofireImage](https://github.com/Alamofire/AlamofireImage)
