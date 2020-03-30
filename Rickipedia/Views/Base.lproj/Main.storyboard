@@ -33,10 +33,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AIz-R3-HxQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CharacterCell" id="Vbu-1g-CAV" customClass="CharacterCell" customModule="Rickipedia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vbu-1g-CAV" id="PL7-2H-EkT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdi-37-Tbz" customClass="CharacterView" customModule="Rickipedia" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Bdi-37-Tbz" secondAttribute="bottom" id="6DC-vg-YMF"/>
+                                                <constraint firstItem="Bdi-37-Tbz" firstAttribute="top" secondItem="PL7-2H-EkT" secondAttribute="top" id="SES-wA-ebh"/>
+                                                <constraint firstItem="Bdi-37-Tbz" firstAttribute="leading" secondItem="PL7-2H-EkT" secondAttribute="leading" id="da1-ja-iEw"/>
+                                                <constraint firstAttribute="trailing" secondItem="Bdi-37-Tbz" secondAttribute="trailing" id="uWO-Hl-af8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="characterView" destination="Bdi-37-Tbz" id="Bi9-OL-1YO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AIz-R3-HxQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0ya-fj-3rQ"/>
+                            <constraint firstItem="AIz-R3-HxQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2m7-cR-R9h"/>
+                            <constraint firstItem="AIz-R3-HxQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d9i-Ea-bfn"/>
+                            <constraint firstItem="AIz-R3-HxQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qcg-Fl-hdq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="YKg-P2-6Ui"/>
+                    <connections>
+                        <outlet property="charactersTableView" destination="AIz-R3-HxQ" id="UQp-WF-OIR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

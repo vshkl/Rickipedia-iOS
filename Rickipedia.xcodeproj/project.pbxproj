@@ -27,6 +27,10 @@
 		806253E024311AED000FD943 /* CharatersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253DF24311AED000FD943 /* CharatersViewController.swift */; };
 		806253E224311B00000FD943 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253E124311B00000FD943 /* LocationsViewController.swift */; };
 		806253E524312460000FD943 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253E424312460000FD943 /* EpisodeCell.swift */; };
+		806253E824322E2B000FD943 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253E724322E2B000FD943 /* CharacterView.swift */; };
+		806253ED24323457000FD943 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 806253EC24323457000FD943 /* AlamofireImage */; };
+		806253F024323BDC000FD943 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253EF24323BDC000FD943 /* CharacterCell.swift */; };
+		806253F224324599000FD943 /* CharacterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 806253F124324599000FD943 /* CharacterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,9 @@
 		806253DF24311AED000FD943 /* CharatersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharatersViewController.swift; sourceTree = "<group>"; };
 		806253E124311B00000FD943 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		806253E424312460000FD943 /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
+		806253E724322E2B000FD943 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		806253EF24323BDC000FD943 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		806253F124324599000FD943 /* CharacterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806253B62430B4B9000FD943 /* Moya in Frameworks */,
+				806253ED24323457000FD943 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +129,8 @@
 		806253D824311416000FD943 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				806253EE24323BB8000FD943 /* CharacterCell */,
+				806253E624322E08000FD943 /* CharacterView */,
 				806253E324312435000FD943 /* EpisodeCell */,
 				806253D924311421000FD943 /* EpisodeView */,
 			);
@@ -156,6 +166,23 @@
 			path = EpisodeCell;
 			sourceTree = "<group>";
 		};
+		806253E624322E08000FD943 /* CharacterView */ = {
+			isa = PBXGroup;
+			children = (
+				806253E724322E2B000FD943 /* CharacterView.swift */,
+				806253F124324599000FD943 /* CharacterView.xib */,
+			);
+			path = CharacterView;
+			sourceTree = "<group>";
+		};
+		806253EE24323BB8000FD943 /* CharacterCell */ = {
+			isa = PBXGroup;
+			children = (
+				806253EF24323BDC000FD943 /* CharacterCell.swift */,
+			);
+			path = CharacterCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +201,7 @@
 			name = Rickipedia;
 			packageProductDependencies = (
 				806253B52430B4B9000FD943 /* Moya */,
+				806253EC24323457000FD943 /* AlamofireImage */,
 			);
 			productName = Rickipedia;
 			productReference = 8062539D2430B3AC000FD943 /* Rickipedia.app */;
@@ -205,6 +233,7 @@
 			mainGroup = 806253942430B3AC000FD943;
 			packageReferences = (
 				806253B42430B4B9000FD943 /* XCRemoteSwiftPackageReference "Moya" */,
+				806253EB24323457000FD943 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 8062539E2430B3AC000FD943 /* Products */;
 			projectDirPath = "";
@@ -221,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806253DD2431143E000FD943 /* EpisodeView.xib in Resources */,
+				806253F224324599000FD943 /* CharacterView.xib in Resources */,
 				806253AD2430B3AD000FD943 /* LaunchScreen.storyboard in Resources */,
 				806253AA2430B3AD000FD943 /* Assets.xcassets in Resources */,
 				806253A82430B3AC000FD943 /* Main.storyboard in Resources */,
@@ -240,7 +270,9 @@
 				806253A52430B3AC000FD943 /* EpisodesViewController.swift in Sources */,
 				806253C32430DB07000FD943 /* Character.swift in Sources */,
 				806253E524312460000FD943 /* EpisodeCell.swift in Sources */,
+				806253E824322E2B000FD943 /* CharacterView.swift in Sources */,
 				806253DB24311434000FD943 /* EpisodeView.swift in Sources */,
+				806253F024323BDC000FD943 /* CharacterCell.swift in Sources */,
 				806253CF2430FC79000FD943 /* LocationsResponse.swift in Sources */,
 				806253E224311B00000FD943 /* LocationsViewController.swift in Sources */,
 				806253C52430F48F000FD943 /* CharactersResponse.swift in Sources */,
@@ -456,6 +488,14 @@
 				minimumVersion = 14.0.0;
 			};
 		};
+		806253EB24323457000FD943 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -463,6 +503,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 806253B42430B4B9000FD943 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
+		};
+		806253EC24323457000FD943 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 806253EB24323457000FD943 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
