@@ -8,3 +8,8 @@ iOS Playground using [Rick and Morty API
   <img src="https://github.com/vshkl/Rickipedia-iOS/blob/master/screenshots/02.png" width="32%" >
   <img src="https://github.com/vshkl/Rickipedia-iOS/blob/master/screenshots/03.png" width="32%" >  
 </div>
+
+## Libraries
+
+- [Moya](https://github.com/Moya/Moya)
+- [AlamofireImages](https://github.com/Alamofire/AlamofireImage)
