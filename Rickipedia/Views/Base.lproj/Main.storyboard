@@ -89,14 +89,54 @@
                     <view key="view" contentMode="scaleToFill" id="vGk-pn-Tjf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BVk-LX-xrO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationCell" id="KZz-03-ax6" customClass="LocationCell" customModule="Rickipedia" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KZz-03-ax6" id="0sg-Mm-3GX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1j-Xe-yaA" customClass="LocationView" customModule="Rickipedia" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="J1j-Xe-yaA" secondAttribute="bottom" id="F7X-pv-yKj"/>
+                                                <constraint firstAttribute="trailing" secondItem="J1j-Xe-yaA" secondAttribute="trailing" id="Hpc-vB-5aU"/>
+                                                <constraint firstItem="J1j-Xe-yaA" firstAttribute="leading" secondItem="0sg-Mm-3GX" secondAttribute="leading" id="af7-YM-9e8"/>
+                                                <constraint firstItem="J1j-Xe-yaA" firstAttribute="top" secondItem="0sg-Mm-3GX" secondAttribute="top" id="dsd-wa-DVb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="locationView" destination="J1j-Xe-yaA" id="lNG-dx-7am"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BVk-LX-xrO" firstAttribute="trailing" secondItem="Xk2-8W-kdd" secondAttribute="trailing" id="0Dn-1U-AL7"/>
+                            <constraint firstItem="BVk-LX-xrO" firstAttribute="top" secondItem="Xk2-8W-kdd" secondAttribute="top" id="0yY-xZ-Pft"/>
+                            <constraint firstItem="BVk-LX-xrO" firstAttribute="leading" secondItem="Xk2-8W-kdd" secondAttribute="leading" id="b9u-sp-3zT"/>
+                            <constraint firstItem="BVk-LX-xrO" firstAttribute="bottom" secondItem="Xk2-8W-kdd" secondAttribute="bottom" id="dnF-Iz-dYc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xk2-8W-kdd"/>
                     </view>
                     <navigationItem key="navigationItem" id="e7k-dN-xTp"/>
+                    <connections>
+                        <outlet property="locationsTableView" destination="BVk-LX-xrO" id="iNw-UB-On3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Nc-Jl-q9D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="221.73913043478262" y="297.99107142857139"/>
+            <point key="canvasLocation" x="221.73913043478262" y="297.32142857142856"/>
         </scene>
         <!--Episodes View Controller-->
         <scene sceneID="9t6-w0-SH3">

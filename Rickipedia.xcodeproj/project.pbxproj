@@ -31,6 +31,9 @@
 		806253ED24323457000FD943 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 806253EC24323457000FD943 /* AlamofireImage */; };
 		806253F024323BDC000FD943 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253EF24323BDC000FD943 /* CharacterCell.swift */; };
 		806253F224324599000FD943 /* CharacterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 806253F124324599000FD943 /* CharacterView.xib */; };
+		806253F624325218000FD943 /* LocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 806253F524325218000FD943 /* LocationView.xib */; };
+		806253F824325229000FD943 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253F724325229000FD943 /* LocationView.swift */; };
+		806253FA24325240000FD943 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253F924325240000FD943 /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		806253E724322E2B000FD943 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		806253EF24323BDC000FD943 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		806253F124324599000FD943 /* CharacterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterView.xib; sourceTree = "<group>"; };
+		806253F524325218000FD943 /* LocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationView.xib; sourceTree = "<group>"; };
+		806253F724325229000FD943 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		806253F924325240000FD943 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,8 @@
 		806253D824311416000FD943 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				806253F424325209000FD943 /* LocationCell */,
+				806253F3243251FD000FD943 /* LocationView */,
 				806253EE24323BB8000FD943 /* CharacterCell */,
 				806253E624322E08000FD943 /* CharacterView */,
 				806253E324312435000FD943 /* EpisodeCell */,
@@ -181,6 +189,23 @@
 				806253EF24323BDC000FD943 /* CharacterCell.swift */,
 			);
 			path = CharacterCell;
+			sourceTree = "<group>";
+		};
+		806253F3243251FD000FD943 /* LocationView */ = {
+			isa = PBXGroup;
+			children = (
+				806253F524325218000FD943 /* LocationView.xib */,
+				806253F724325229000FD943 /* LocationView.swift */,
+			);
+			path = LocationView;
+			sourceTree = "<group>";
+		};
+		806253F424325209000FD943 /* LocationCell */ = {
+			isa = PBXGroup;
+			children = (
+				806253F924325240000FD943 /* LocationCell.swift */,
+			);
+			path = LocationCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806253DD2431143E000FD943 /* EpisodeView.xib in Resources */,
+				806253F624325218000FD943 /* LocationView.xib in Resources */,
 				806253F224324599000FD943 /* CharacterView.xib in Resources */,
 				806253AD2430B3AD000FD943 /* LaunchScreen.storyboard in Resources */,
 				806253AA2430B3AD000FD943 /* Assets.xcassets in Resources */,
@@ -265,12 +291,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				806253CD2430FC0B000FD943 /* Location.swift in Sources */,
+				806253FA24325240000FD943 /* LocationCell.swift in Sources */,
 				806253C72430F71D000FD943 /* Info.swift in Sources */,
 				806253E024311AED000FD943 /* CharatersViewController.swift in Sources */,
 				806253A52430B3AC000FD943 /* EpisodesViewController.swift in Sources */,
 				806253C32430DB07000FD943 /* Character.swift in Sources */,
 				806253E524312460000FD943 /* EpisodeCell.swift in Sources */,
 				806253E824322E2B000FD943 /* CharacterView.swift in Sources */,
+				806253F824325229000FD943 /* LocationView.swift in Sources */,
 				806253DB24311434000FD943 /* EpisodeView.swift in Sources */,
 				806253F024323BDC000FD943 /* CharacterCell.swift in Sources */,
 				806253CF2430FC79000FD943 /* LocationsResponse.swift in Sources */,
