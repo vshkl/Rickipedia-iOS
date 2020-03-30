@@ -5,6 +5,6 @@ iOS Playground using [Rick and Morty API
 
 <div style="display:flex;" >
   <img src="https://github.com/vshkl/Rickipedia-iOS/blob/master/screenshots/01.png" width="32%" >
-  <img src="https://github.com/vshkl/Rickipedia-iOS/blob/master/screenshots/03.png" width="32%" >
+  <img src="https://github.com/vshkl/Rickipedia-iOS/blob/master/screenshots/02.png" width="32%" >
   <img src="https://github.com/vshkl/Rickipedia-iOS/blob/master/screenshots/03.png" width="32%" >  
 </div>
