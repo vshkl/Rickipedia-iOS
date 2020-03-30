@@ -49,8 +49,7 @@ class CharacterView: UIView {
     private func configureImageView() {
         let url = URL(string: character.image)!
         let placeholder = UIImage(systemName: "person.fill")!
-        
-        image.af.setImage(withURL: url, placeholderImage: placeholder)
+        image.af.setImage(withURL: url, placeholderImage: placeholder, imageTransition: .crossDissolve(0.2))
     }
 
 }
