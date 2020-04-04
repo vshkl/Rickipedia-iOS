@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EpisodesViewController.swift
 //  Rickipedia
 //
 //  Created by Pavel Vashkel on 3/29/20.
@@ -26,6 +26,15 @@ class EpisodesViewController: UIViewController {
         episodesTableView.delegate = self
         
         fetchEpisodes()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toEpisodeDetails") {
+            let destination = segue.destination as! UINavigationController
+            let targed = destination.topViewController as! EpisodeDetailsViewController
+
+            targed.episode = episodes[episodesTableView.indexPathForSelectedRow!.row]
+        }
     }
     
     private func fetchEpisodes(forPage page: Int = 1) {
@@ -78,5 +87,10 @@ extension EpisodesViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 
 extension EpisodesViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "toEpisodeDetails", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		805EF2B42438946D00D3F8D8 /* EpisodeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805EF2B32438946D00D3F8D8 /* EpisodeDetailsViewController.swift */; };
 		806253A12430B3AC000FD943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253A02430B3AC000FD943 /* AppDelegate.swift */; };
 		806253A32430B3AC000FD943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253A22430B3AC000FD943 /* SceneDelegate.swift */; };
 		806253A52430B3AC000FD943 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806253A42430B3AC000FD943 /* EpisodesViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		805EF2B32438946D00D3F8D8 /* EpisodeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailsViewController.swift; sourceTree = "<group>"; };
 		8062539D2430B3AC000FD943 /* Rickipedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rickipedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806253A02430B3AC000FD943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		806253A22430B3AC000FD943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				806253A42430B3AC000FD943 /* EpisodesViewController.swift */,
+				805EF2B32438946D00D3F8D8 /* EpisodeDetailsViewController.swift */,
 				806253DF24311AED000FD943 /* CharatersViewController.swift */,
 				806253E124311B00000FD943 /* LocationsViewController.swift */,
 				806253A62430B3AC000FD943 /* Main.storyboard */,
@@ -293,6 +296,7 @@
 				806253CD2430FC0B000FD943 /* Location.swift in Sources */,
 				806253FA24325240000FD943 /* LocationCell.swift in Sources */,
 				806253C72430F71D000FD943 /* Info.swift in Sources */,
+				805EF2B42438946D00D3F8D8 /* EpisodeDetailsViewController.swift in Sources */,
 				806253E024311AED000FD943 /* CharatersViewController.swift in Sources */,
 				806253A52430B3AC000FD943 /* EpisodesViewController.swift in Sources */,
 				806253C32430DB07000FD943 /* Character.swift in Sources */,

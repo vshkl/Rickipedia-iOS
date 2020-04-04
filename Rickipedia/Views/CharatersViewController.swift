@@ -1,5 +1,5 @@
 //
-//  CharactersViewControlerViewController.swift
+//  CharatersViewController.swift
 //  Rickipedia
 //
 //  Created by Pavel Vashkel on 3/29/20.

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3MS-z0-LGV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3MS-z0-LGV">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -171,6 +171,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="episodeView" destination="lWW-Ei-FeA" id="Wma-j6-HFy"/>
+                                            <segue destination="TK5-Lg-dov" kind="show" identifier="toEpisodeDetails" id="RlY-5N-a1N"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -193,6 +194,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tiO-VI-lhP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="221.73913043478262" y="-997.09821428571422"/>
+        </scene>
+        <!--Episode Details View Controller-->
+        <scene sceneID="TPI-Vk-l77">
+            <objects>
+                <viewController id="EQ4-vk-Nou" customClass="EpisodeDetailsViewController" customModule="Rickipedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Olg-sM-Fyg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="R6q-pw-U3o"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ylu-RX-s4X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70i-AF-1Gt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2030" y="-997"/>
         </scene>
         <!--Episodes-->
         <scene sceneID="kE0-y7-fIv">
@@ -251,10 +268,32 @@
             </objects>
             <point key="canvasLocation" x="-688" y="297"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p6D-tu-JT4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TK5-Lg-dov" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="DkB-e7-Cme"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tjf-Ee-owE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8ID-kO-Dx3">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="EQ4-vk-Nou" kind="relationship" relationship="rootViewController" id="RK4-fe-KwA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zLa-bD-N3X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="-997"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="film" catalog="system" width="64" height="46"/>
-        <image name="location" catalog="system" width="64" height="56"/>
-        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="film" catalog="system" width="128" height="93"/>
+        <image name="location" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
     </resources>
 </document>
